@@ -286,10 +286,10 @@
     object-fit: cover;
   }
   #es-rc #es-rc-content .es-features__wrapper--top {
-    width: 50%;
+    width: 40%;
   }
   #es-rc #es-rc-content .es-features__wrapper--bottom {
-    width: 75%;
+    width: 68%;
   }
 }
 @container es-rc-content (min-width: 768px) {
@@ -320,7 +320,7 @@
     margin-top: 32px;
   }
   #es-rc #es-rc-content .es-features__wrapper--top {
-    width: 50%;
+    width: 40%;
     max-width: 440px;
   }
   #es-rc #es-rc-content .es-features__wrapper--bottom {
@@ -381,24 +381,33 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #673996;
-  font-size: 20px;
+  font-size: 19px;
 }
 #es-rc #es-rc-content .es-ingredients__list__text {
   font-size: 18.4px;
   margin-top: 8px;
 }
-@container es-rc-content (max-width: 575px) {
+@container es-rc-content (max-width: 765px) {
+  #es-rc #es-rc-content .es-ingredients__night-cream-img {
+    max-width: 386px;
+    width: 100%;
+  }
   #es-rc #es-rc-content .es-ingredients__content {
     margin-top: 391px;
   }
 }
-@container es-rc-content (min-width: 576px) {
+@container es-rc-content (min-width: 766px) {
   #es-rc #es-rc-content .es-ingredients {
     flex-direction: column;
   }
   #es-rc #es-rc-content .es-ingredients__content {
     max-width: 820px;
     margin-left: 294px;
+  }
+}
+@container es-rc-content (max-width: 375px) {
+  #es-rc #es-rc-content .es-ingredients__content {
+    margin-top: 100%;
   }
 }
 @container es-rc-content (min-width: 768px) {
@@ -412,7 +421,6 @@
 #es-rc #es-rc-content .es-benefits__image.es-mobile {
   width: 80%;
   max-width: 300px;
-  padding: 32px;
 }
 #es-rc #es-rc-content .es-benefits__image__container {
   position: relative;
@@ -478,7 +486,7 @@
   #es-rc #es-rc-content .es-benefits__container {
     position: relative;
     z-index: 2;
-    width: 65%;
+    width: 50%;
   }
 }
 @container es-rc-content (min-width: 768px) {
@@ -613,7 +621,7 @@
 #es-rc #es-rc-content .es-cross__item__image-container:hover ~ .es-cross__item__button, #es-rc #es-rc-content .es-cross__item__image:hover ~ .es-cross__item__button {
   background-color: #673996;
 }
-@container es-rc-content (min-width: 768px) {
+@container es-rc-content (min-width: 798px) {
   #es-rc #es-rc-content .es-cross__content {
     flex-direction: row;
     align-items: flex-start;
