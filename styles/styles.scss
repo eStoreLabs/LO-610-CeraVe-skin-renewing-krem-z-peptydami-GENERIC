@@ -578,8 +578,8 @@ $transition: all 0.3s ease-in-out;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      gap: $px-XL;
-      padding: $px-L;
+      gap: 15px;
+      padding-right: 12px;
 
       background-color: $color-accent-2;
       color: $color-bg;
@@ -587,14 +587,29 @@ $transition: all 0.3s ease-in-out;
     &__name {
       text-transform: uppercase;
       font-weight: $fw-bold;
-      font-size: 24px;
+      font-size: 30px;
       margin-bottom: $px-L;
+    }
+    &__text {
+      font-size: 25px;
+    }
+    @container es-rc-content (max-width: 575px) {
+      &__name {
+        font-size: 25px;
+      }
+      &__text {
+        font-size: 20px;
+      }
     }
     @container es-rc-content (min-width: 576px) {
       background-color: $color-accent-2;
     }
-    @container es-rc-content (max-width: 789px) {
+    @container es-rc-content (max-width: 933px) {
       flex-direction: column;
+
+      &__content {
+        padding: $px-L;
+      }
 
       &__image-container {
         background-color: $color-bg;

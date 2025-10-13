@@ -513,25 +513,39 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
-  padding: 24px;
+  gap: 15px;
+  padding-right: 12px;
   background-color: #673996;
   color: #ffffff;
 }
 #es-rc #es-rc-content .es-formula-use__name {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 24px;
+}
+#es-rc #es-rc-content .es-formula-use__text {
+  font-size: 25px;
+}
+@container es-rc-content (max-width: 575px) {
+  #es-rc #es-rc-content .es-formula-use__name {
+    font-size: 25px;
+  }
+  #es-rc #es-rc-content .es-formula-use__text {
+    font-size: 20px;
+  }
 }
 @container es-rc-content (min-width: 576px) {
   #es-rc #es-rc-content .es-formula-use {
     background-color: #673996;
   }
 }
-@container es-rc-content (max-width: 789px) {
+@container es-rc-content (max-width: 933px) {
   #es-rc #es-rc-content .es-formula-use {
     flex-direction: column;
+  }
+  #es-rc #es-rc-content .es-formula-use__content {
+    padding: 24px;
   }
   #es-rc #es-rc-content .es-formula-use__image-container {
     background-color: #ffffff;
