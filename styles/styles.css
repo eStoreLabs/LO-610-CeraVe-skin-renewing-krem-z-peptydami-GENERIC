@@ -500,13 +500,23 @@
     width: 50%;
   }
 }
-#es-rc #es-rc-content .es-formula-use__content {
-  background-color: #673996;
-  color: #ffffff;
-  padding: 24px;
+#es-rc #es-rc-content .es-formula-use {
   display: flex;
+}
+#es-rc #es-rc-content .es-formula-use > * {
+  flex: 1;
+}
+#es-rc #es-rc-content .es-formula-use__image {
+  min-height: 284px;
+}
+#es-rc #es-rc-content .es-formula-use__content {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 32px;
+  padding: 24px;
+  background-color: #673996;
+  color: #ffffff;
 }
 #es-rc #es-rc-content .es-formula-use__name {
   text-transform: uppercase;
@@ -516,29 +526,15 @@
 }
 @container es-rc-content (min-width: 576px) {
   #es-rc #es-rc-content .es-formula-use {
-    display: flex;
-    align-items: center;
     background-color: #673996;
-    position: relative;
-  }
-  #es-rc #es-rc-content .es-formula-use__image {
-    width: 54%;
-    min-height: 284px;
-    margin-left: 0;
-  }
-  #es-rc #es-rc-content .es-formula-use__content {
-    margin-left: -30px;
-    background-color: transparent;
-    width: 49%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
-@container es-rc-content (min-width: 768px) {
-  #es-rc #es-rc-content .es-formula-use__image {
-    width: 50%;
+@container es-rc-content (max-width: 789px) {
+  #es-rc #es-rc-content .es-formula-use {
+    flex-direction: column;
+  }
+  #es-rc #es-rc-content .es-formula-use__image-container {
+    background-color: #ffffff;
   }
 }
 #es-rc #es-rc-content .es-video__iframe {
