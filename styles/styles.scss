@@ -567,8 +567,12 @@ $transition: all 0.3s ease-in-out;
   .es-formula-use {
     display: flex;
 
-    & > * {
-      flex: 1;
+    & > *:first-child {
+      flex: 0 0 53%;
+    }
+
+    & > *:last-child {
+      flex: 0 0 47%;
     }
 
     &__image {

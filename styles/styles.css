@@ -503,8 +503,11 @@
 #es-rc #es-rc-content .es-formula-use {
   display: flex;
 }
-#es-rc #es-rc-content .es-formula-use > * {
-  flex: 1;
+#es-rc #es-rc-content .es-formula-use > *:first-child {
+  flex: 0 0 53%;
+}
+#es-rc #es-rc-content .es-formula-use > *:last-child {
+  flex: 0 0 47%;
 }
 #es-rc #es-rc-content .es-formula-use__image {
   min-height: 284px;
